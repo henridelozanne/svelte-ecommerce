@@ -1,4 +1,5 @@
 <script>
+  import LoginLink from '../LoginLink.svelte';
   import links from '../../constants/links.js';
   import { link } from 'svelte-routing';
   import globalStore from '../../stores/globalStore.js';
@@ -21,6 +22,7 @@
           <a href={sideLink.url} use:link on:click="{() => closeSidebar('sidebar', false)}">{sideLink.text}</a>
         </li>
       {/each}
+        <LoginLink />
     </ul>
   </div>
 </div>
