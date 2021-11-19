@@ -30,5 +30,5 @@
 	<Route path="/login"><Login /></Route>
 	<Route path="/checkout"><Checkout /></Route>
 	<Route path="/products"><Products /></Route>
-	<Route path="/products/:id"><ProductTemplate /></Route>
+	<Route path="/products/:id" component={ProductTemplate}></Route>
 </Router>
